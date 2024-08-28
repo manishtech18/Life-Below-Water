@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+section#home {
+    background: url('underwater.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+section#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+/* styles.css */
+.threat-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between images */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.threat-images img {
+    width: 100%; /* Ensure images take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images cover the container without distortion */
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-container img {
+    width: calc(25% - 1rem);
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    color: #f0f8ff;
+    text-decoration: none;
+}
